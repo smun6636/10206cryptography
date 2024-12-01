@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국사 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">반갑습니다</h1>
+        <button id="startButton">퀴즈 시작</button>
+
+        <div id="quizContainer" class="hidden">
+            <h2 id="questionTitle"></h2>
+            <form id="inputForm">
+                <label for="userInput">정답을 입력하세요:</label>
+                <input type="text" id="userInput" name="userInput" required>
+                <button type="submit">확인</button>
+            </form>
+            <p id="result"></p>
+            <button id="nextButton" class="hidden">다음 문제</button>
+            <button id="skipButton">건너뛰기</button>
+        </div>
+
+        <div id="finalScore" class="hidden">
+            <h2>감사합니다!</h2>
+            <p id="scoreDisplay"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

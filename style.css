@@ -1,0 +1,104 @@
+/* 기본 스타일 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 360px; /* 모바일에 적합한 최대 너비 */
+    width: 90%; /* 화면 크기에 따라 유동적 */
+}
+
+/* 문제 문구 스타일 */
+h2 {
+    color: #333;
+    font-size: 16px; /* 문제 문구 글자 크기 */
+    line-height: 1.4; /* 줄 간격 */
+    word-break: break-word; /* 긴 문장은 줄바꿈 */
+    text-align: center; /* 가운데 정렬 */
+    margin-bottom: 16px; /* 문제와 입력란 사이 간격 */
+}
+
+/* 입력란과 버튼을 같은 줄에 배치 */
+form {
+    display: flex; /* 입력란과 버튼을 한 줄에 배치 */
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center;
+    gap: 8px; /* 입력란과 버튼 간격 */
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    width: calc(100% - 90px); /* 버튼 크기를 고려한 입력란 폭 */
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block; /* 입력란을 인라인 블록으로 설정 */
+    vertical-align: middle; /* 버튼과 수직 정렬 */
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block; /* 버튼도 인라인 블록으로 설정 */
+    vertical-align: middle; /* 입력란과 수직 정렬 */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* 결과 문구 스타일 */
+#result {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 14px; /* 모바일에서는 글자 크기를 더 작게 */
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    #result {
+        font-size: 12px;
+    }
+}
