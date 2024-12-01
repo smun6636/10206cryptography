@@ -1,0 +1,109 @@
+/* 전체 초기화 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 360px;
+    width: 90%;
+    position: relative;
+}
+
+/* 페이지 번호 표시 (우측 상단) */
+#pageIndicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+    color: #888;
+}
+
+/* 문제 텍스트 */
+#questionTitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* 입력 폼 스타일 */
+.inputWrapper {
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.inputAndButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* 입력란과 버튼 사이 간격 */
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 결과 텍스트 */
+#result {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 480px) {
+    #questionTitle {
+        font-size: 14px;
+    }
+    label {
+        font-size: 12px;
+    }
+    input {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px;
+    }
+}

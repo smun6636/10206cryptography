@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국사 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 배경 스토리 화면 -->
+        <div id="storyContainer">
+            <p id="storyText"></p>
+            <button id="nextStoryButton">다음</button>
+        </div>
+        
+        <!-- 퀴즈 화면 -->
+        <div id="quizContainer" class="hidden">
+            <div id="pageIndicator" class="hidden"></div> <!-- 페이지 번호 표시 -->
+            <h2 id="questionTitle"></h2>
+            <form id="inputForm">
+                <div class="inputWrapper">
+                    <label for="userInput">빈칸에 알맞는 말을 입력하세요:</label>
+                    <div class="inputAndButton">
+                        <input type="text" id="userInput" name="userInput" required>
+                        <button type="submit">확인</button>
+                    </div>
+                </div>
+            </form>
+            <p id="result"></p>
+            <button id="nextButton" class="hidden">다음 문제</button>
+            <button id="skipButton" class="hidden">건너뛰기</button>
+        </div>
+        
+        <!-- 결과 화면 -->
+        <div id="finalScore" class="hidden">
+            <h2>당신의 점수는?</h2>
+            <p id="scoreDisplay"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
